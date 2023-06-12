@@ -3,8 +3,16 @@
 <section>
      <header><h1>My Friends</h1></header>
     <ul>
-        <friend-contact></friend-contact>
-        <friend-contact></friend-contact>
+        <friend-contact 
+        name="Manuel Lorenz" 
+        phone-number="954-749-1358" 
+        email-address="manuel@locohost.com"
+        ></friend-contact>
+        <friend-contact
+         name="Julie Goldman" 
+         phone-number="786-743-1398" 
+         email-address="goldfinger@locohost.com"
+        ></friend-contact>
     </ul>
 </section>   
 </template>
@@ -23,7 +31,7 @@
                         id: 'julie',
                         name: 'Julie Goldman',
                         phone: '786-743-1398',
-                        email: 'goldfinder@locohost.com'
+                        email: 'goldfinger@locohost.com'
                     }
                 ]
             }
