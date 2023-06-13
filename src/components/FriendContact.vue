@@ -27,12 +27,12 @@
             required: true
             },
         isFavorite: {
-            type: String,
+            type: Boolean,
             required: false,
-            default: '0',
-            validator: function(value){
-                return value === '1' || value === '0';
-            }
+            default: false
+            // validator: function(value){
+            //     return value === '1' || value === '0';
+            // }
         }
            
      },   
