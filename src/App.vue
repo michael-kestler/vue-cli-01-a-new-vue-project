@@ -9,7 +9,8 @@
         :name="friend.name" 
         :phone-number="friend.phone" 
         :email-address="friend.email"
-        :is-favorite="true"
+        :is-favorite="friend.isFavorite"
+        @toggle-favorite="toggleFavoriteStatus"
         ></friend-contact>
     </ul>
 </section>   
@@ -23,18 +24,28 @@
                         id: 'manuel',
                         name: 'Manuel Lorenz',
                         phone: '954-749-1358',
-                        email: 'manuel@locohost.com'
+                        email: 'manuel@locohost.com',
+                        isFavorite: true
                     },
                     {
                         id: 'julie',
                         name: 'Julie Goldman',
                         phone: '786-743-1398',
-                        email: 'goldfinger@locohost.com'
-                    }
-                ]
+                        email: 'goldfinger@locohost.com',
+                        isFavorite: false
+                    },
+                ],
+            };
+        },
+            methods: {
+
+                toggleFavoriteStatus(){
+                  //this is where i was
+                  alert('This works!')
+                }
+
             }
-        }
-    }
+        };
 </script>
 
 <style>
