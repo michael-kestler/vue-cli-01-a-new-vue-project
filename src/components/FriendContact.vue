@@ -39,7 +39,24 @@
             // }
         }
            
-     },   
+     },
+     
+    emits:['toggle-favorite'],
+
+     //emits is the counterpart to props, in props you define which props this componenent receives in emits you define which custom events your component will emit 
+     //this is useful for documentation so that collaborators don't have to read through all code to find events
+    //  emits: {
+    //     'toggle-favorite': function(id) {
+    //         if (id){
+    //             return true;
+    //         } else {
+    //             console.warn('Id is missing!');
+    //             return false;
+    //         }
+    //     }
+    //  },
+
+
     data(){
         return{
         detailsAreVisible: false,
