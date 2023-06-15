@@ -11,10 +11,14 @@
         <div>
             <label>Email</label>
             <input type="email"/>
+        </div>
+        <div>
+            <button>Add Contact</button>
         </div>       
     </form>
 </template>
 
 <script>
+export default {};
 
 </script>

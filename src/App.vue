@@ -2,6 +2,7 @@
 <template>
 <section>
      <header><h1>My Friends</h1></header>
+     <new-friend></new-friend>
     <ul>
         <friend-contact
         v-for="friend in friends"
@@ -17,7 +18,9 @@
 </section>   
 </template>
 <script>
+import NewFriend from './components/NewFriend.vue';
      export default{
+  components: { NewFriend },
         data() {
             return {
                 friends: [
@@ -86,7 +89,7 @@ header {
   list-style: none;
 }
 
-#app li {
+#app li, #app form {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   margin: 1rem auto;
   border-radius: 10px;
