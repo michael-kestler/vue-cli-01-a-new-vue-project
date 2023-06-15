@@ -1,7 +1,7 @@
 <template>
     <form>
         <div>
-            <lablel>Name</lablel>
+            <label>Name</label>
             <input type="text"/>
         </div>
         <div>
