@@ -7,6 +7,7 @@
         <li><strong>Phone: </strong> {{ phoneNumber }}</li>
         <li><strong>Email: </strong>{{ emailAddress }}</li>
     </ul>
+    <button @click="$emit('delete', id)">Delete</button>
 </li>
 </template>
 
@@ -41,7 +42,7 @@
            
      },
      
-    emits:['toggle-favorite'],
+    emits:['toggle-favorite', 'delete'],
 
      //emits is the counterpart to props, in props you define which props this componenent receives in emits you define which custom events your component will emit 
      //this is useful for documentation so that collaborators don't have to read through all code to find events
